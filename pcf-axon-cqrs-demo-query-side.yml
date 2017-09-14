@@ -1,0 +1,15 @@
+your:
+  host:
+    is: Aurora
+axon:
+  amqp:
+    exchange: CatalogEvents
+  eventhandling:
+    processors:
+      amqpEvents:
+        source: complaintEventsMethod
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop

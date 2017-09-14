@@ -1,0 +1,29 @@
+your:
+  host:
+    is: Ben
+axon:
+  amqp:
+    exchange: CatalogEvents
+
+spring:
+  datasource:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    generate-ddl: true
+    # database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    # properties:
+    #   hibernate:
+    #     dialect: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+    io:
+      pivotal: INFO
